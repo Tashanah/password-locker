@@ -28,7 +28,19 @@ def save_credential(credentials):
     Function to save password
     '''
     credentials.save_credential()
-    
+
+def del_user(user):
+    '''
+    Function to delete user
+    '''
+    user.delete_user()
+
+def del_credential(credentials):
+    '''
+    Function to delete credential
+    '''
+    credentials.delete_credential()
+
 
 
 
