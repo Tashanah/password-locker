@@ -9,10 +9,11 @@ class user:
     def _init_(self,user_name,account_name):
         self.user_name=user_name
         self.account_name=account_name
-print("enter username")
-name=input()
-print("account name")
-account=input()
+
+user_name=input("enter username ")
+
+account_name=input("account name: ")
+
 
 class credentials:
     '''
@@ -25,7 +26,10 @@ print("type own-to generate your own password or random-to randomly generate a p
 passwordtype=input()
 
 if passwordtype=='own':
-    print(passwordtype)
+    print("enter password")
+    passwordtype=input() 
+    print("your user name is " + user_name, "for " + account_name,"your password is " + passwordtype)
+    
 elif passwordtype=='random':
     
 
@@ -33,5 +37,6 @@ elif passwordtype=='random':
         password=string.ascii_letters + string.digits
         lettersAndDigits = string.ascii_letters + string.digits
         return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
-print ("randomly generated password :",randomStringDigits(12))
+        # randomStringDigits(12)
 
+print("your user name is " + user_name, "for " + account_name," your random password is " + randomStringDigits(12))
