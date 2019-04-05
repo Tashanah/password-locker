@@ -1,3 +1,5 @@
+import random
+import string
 class user:
     '''
     class that generates new instance of a user
@@ -19,5 +21,17 @@ class credentials:
     credentials_list=[]
     def _init_(self,user_password):
         self.user_password=user_password 
-print("enter password.It must be a mix of 12 numbers and letters(uppercase and lowercase)")
-password=input()
+print("type own-to generate your own password or random-to randomly generate a password")
+passwordtype=input()
+
+if passwordtype=='own':
+    print(passwordtype)
+elif passwordtype=='random':
+    
+
+    def randomStringDigits(stringLength):
+        password=string.ascii_letters + string.digits
+        lettersAndDigits = string.ascii_letters + string.digits
+        return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
+print ("randomly generated password :",randomStringDigits(12))
+
