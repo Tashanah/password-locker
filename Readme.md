@@ -2,10 +2,10 @@ Password Locker project
 This project was generated using python version 3.6. This is a terminal project that allows users to store their passwords and generate new ones.
 
 SETUP INSTRUCTIONS
-1.Once you open the page, Enter a github username on the search bar.
+1.Fork the repository to your work space.
+2.Once you have forked it, run it on your terminal.
 
-Click on the search button below
-3.You can now view the users repositories.
+
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT
 | GENERAL BEHAVIOUR | INPUT | OUTPUT|
