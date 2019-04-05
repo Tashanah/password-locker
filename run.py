@@ -41,6 +41,19 @@ def del_credential(credentials):
     '''
     credentials.delete_credential()
 
+def display_user(user):
+    '''
+    Function to display a user
+    '''
+    return user.display_user()
+
+def display_credential(credentials):
+    '''
+    Function to display a credential
+    '''
+    return credentials.display_credential()
+    
+
 
 
 
