@@ -49,7 +49,7 @@ class credentials:
         '''
         credentials.credentials_list.append(self)
 
-    def del_credential(self):
+    def delete_credential(self):
         '''
         delete credential method deletes a password
         '''
@@ -61,11 +61,12 @@ class credentials:
         '''
         credentials.credentials_list.append(self)
 
-    def dispaly_credential(self):
+    @classmethod
+    def display_credentials(cls):
         '''
-        dispaly credential method allows a user to view all accounts and usernames
+        method that returns the credentials list
         '''
-        credentials.credentials_list.append(self)
+        return cls.credentials_list
 
 
 #         self.user_password=user_password 
