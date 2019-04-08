@@ -67,6 +67,13 @@ class Testuser(unittest.TestCase):
 
         self.assertEqual(User.display_user(),User.user_list)
 
+    def test_search_all_users(self):
+        '''
+        method that allows users to search accounts
+        '''
+
+        self.assertEqual(User.display_user(),User.user_list)
+
 
 class Testcredentials(unittest.TestCase):
 
@@ -126,6 +133,13 @@ class Testcredentials(unittest.TestCase):
     def test_display_all_credentials(self):
         '''
         method that returns a list of all credentials saved
+        '''
+
+        self.assertEqual(credentials.display_credentials(),credentials.credentials_list)
+
+    def test_search_all_credentials(self):
+        '''
+        method that allows users to search passwords
         '''
 
         self.assertEqual(credentials.display_credentials(),credentials.credentials_list)

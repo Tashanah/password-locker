@@ -26,6 +26,12 @@ class User:
         '''
         User.user_list.append(self)
 
+    
+    # def find_user(account):
+    #     '''
+    #     Function that finds a user by account name and returns the account
+    #     '''
+    #     return User.find_by_account(account)
 
     @classmethod
     def display_user(cls):
