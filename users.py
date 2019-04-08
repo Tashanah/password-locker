@@ -14,7 +14,7 @@ class User:
 
 
 
-    def del_user(self):
+    def delete_user(self):
         '''
         delete user method deletes a username and account name
         '''
@@ -26,11 +26,6 @@ class User:
         '''
         User.user_list.append(self)
 
-    def dispaly_user(self):
-        '''
-        dispaly user method allows a user to view all accounts and usernames
-        '''
-        User.user_list.append(self)
 
     @classmethod
     def display_user(cls):
