@@ -92,7 +92,8 @@ def main():
                                         return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
        
                                 user_password = randomStrings(8)
-                                
+                                print("your user name is " + user_name, "for " + account_name,"your password is " + user_password)
+                        
 
                                 save_credential(create_credential(user_password)) # create and save newcredential.
 
