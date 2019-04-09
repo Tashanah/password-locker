@@ -120,18 +120,18 @@ def main():
                                 print("You dont seem to have any accounts saved yet")
                                 print('\n')
 
-                # elif short_code == 'fc':
-                #         print("Enter the account you want to search for")
-                #         search_account = input()
-                #         if check_existing_accounts(search_account):
-                #                 search_account = find_account(search_account)
-                #                 print(f"{search_account.user_name} {search_account.account_name}")
-                #                 print('-' * 20)
+                elif short_code == 'fc':
+                        print("Enter the account you want to search for")
+                        search_account = input()
+                        if check_existing_accounts(search_account):
+                                search_account = find_account(search_account)
+                                print(f"{search_account.user_name} {search_account.account_name}")
+                                print('-' * 20)
 
-                #                 print(f"account name.......{search_account.account.name}")
-                #                 print(f"user name.......{search_account.user_name}")
-                #         else:
-                #                 print("That account does not exist")
+                                print(f"account name.......{search_account.account.name}")
+                                print(f"user name.......{search_account.user_name}")
+                        else:
+                                print("That account does not exist")
 
                 elif short_code == 'ex':
                             print("Bye .......")
