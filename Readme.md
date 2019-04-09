@@ -18,8 +18,6 @@ This project was generated using python version 3.6. This is a terminal project 
 |User wants to view account credentials|---|Account credentials are dispalyed|
 
 
-## Development server
-Run this program on your terminal using the python3.6 command followed by the file name e.g python3.6 password-locker
 
 
 

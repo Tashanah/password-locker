@@ -5,7 +5,12 @@ import string
 from users import User
 from users import credentials
 
-
+def create_user(user_name,account_name):
+    '''
+    Function to create a new user
+    '''
+    new_user = User(user_name,account_name)
+    return new_user
 
 def create_credential(user_password):
     '''
@@ -87,6 +92,7 @@ def main():
                                         return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
        
                                 user_password = randomStrings(8)
+                                
 
                                 save_credential(create_credential(user_password)) # create and save newcredential.
 
